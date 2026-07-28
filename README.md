@@ -1,7 +1,4 @@
-[README.md](https://github.com/user-attachments/files/30464905/README.md)
 # React Team Project Collaborating on a React Frontend
-
-Team Members: Brian J, Cahlaija K, Henoc M, Marlon R, Kevin M
 
 A collaborative team workflow for building a multi-page React application using **React Router** and the **Context API**, fetching data from an external API — all while using Git branches and pull requests so no one overwrites anyone else's work.
 
@@ -149,11 +146,11 @@ Fill in each teammate's name next to the file(s) they own. Keep the work evenly 
 
 | Team Member | Assigned File(s) | Status |
 |-------------|------------------|--------|
-| _`<name>`_ | `App.jsx`, `context.js` | 🔲 Not started |
-| _`<name>`_ | `Home.jsx`, `SearchBar.jsx` | 🔲 Not started |
-| _`<name>`_ | `ItemList.jsx`, `Item.jsx` | 🔲 Not started |
-| _`<name>`_ | `ItemDetails.jsx`, `Favorites.jsx` | 🔲 Not started |
-| _`<name>`_ | `Nav.jsx`, `NotFound.jsx`, `api.js` | 🔲 Not started |
+| _`Brian`_ | `App.jsx`, `context.js`,`NotFound.jsx` | 🔲 Not started |
+| _`Kevin`_ | `Home.jsx`, `ItemDetails.jsx` | 🔲 Not started |
+| _`Marlon`_ | `ItemList.jsx`, `Item.jsx` | 🔲 Not started |
+| _`Cahlaija`_ | `Main.jsx`, `Favorites.jsx` | 🔲 Not started |
+| _`Henny`_ | `Nav.jsx`, `SearchBar.jsx`, `api.js` | 🔲 Not started |
 
 > **Status key:** 🔲 Not started · 🟡 In progress · ✅ Merged into `main`
 > The file groupings above are a suggestion — rearrange them to fit your team's size and strengths.
