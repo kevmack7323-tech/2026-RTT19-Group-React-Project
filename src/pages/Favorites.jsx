@@ -1,8 +1,11 @@
-function Favorites() {
+import ItemList from "../components/ItemList";
+
+function Favorites({ favoriteItems }) {
   return (
     <div>
       <h1>Favorite Movies</h1>
-      <p>Your saved favorite movies will appear here.</p>
+
+      <ItemList items={favoriteItems} />
     </div>
   );
 }
