@@ -1,9 +1,6 @@
-[README.md](https://github.com/user-attachments/files/30464905/README.md)
 # React Team Project Collaborating on a React Frontend
 
-Team Members: Brian J, Cahlaija K, Henoc M, Marlon R, Kevin M
-
-A collaborative team workflow for building a multi-page React application using **React Router** and the **Context API**, fetching data from an external API — all while using Git branches and pull requests so no one overwrites anyone else's work.
+A collaborative team workflow for building a multi-page React application using **React Router** and the **Context API**, fetching data from an external API, all while using Git branches and pull requests so no one overwrites anyone else's work.
 
 ---
 
@@ -23,7 +20,7 @@ A collaborative team workflow for building a multi-page React application using 
 
 ## Objective
 
-Successfully set up, clone, branch, and collaborate on a multi-page React application (using React Router and Context API) that fetches data from an external API — **without overwriting each other's work.**
+Successfully set up, clone, branch, and collaborate on a multi-page React application (using React Router and Context API) that fetches data from an external API **without overwriting each other's work.**
 
 ---
 
@@ -41,12 +38,12 @@ Successfully set up, clone, branch, and collaborate on a multi-page React applic
 > **Who:** The Driver only
 > **Goal:** Create the central hub for the project and give everyone access.
 
-1. **Create the repo** — the Driver logs into GitHub and creates a new **Private** or **Public** repository (e.g. `react-team-project`)
+1. **Create the repo** the Driver logs into GitHub and creates a new **Private** or **Public** repository (e.g. `react-team-project`)
 2. **Add collaborators:**
    - Go to the repository's **Settings** tab
    - Click **Collaborators** in the left menu
    - Click **Add people** and invite teammates by GitHub username or email
-3. **Accept invites** — each member checks their email or GitHub notifications and accepts
+3. **Accept invites** each member checks their email or GitHub notifications and accepts
 
 ---
 
@@ -149,11 +146,11 @@ Fill in each teammate's name next to the file(s) they own. Keep the work evenly 
 
 | Team Member | Assigned File(s) | Status |
 |-------------|------------------|--------|
-| _`<name>`_ | `App.jsx`, `context.js` | 🔲 Not started |
-| _`<name>`_ | `Home.jsx`, `SearchBar.jsx` | 🔲 Not started |
-| _`<name>`_ | `ItemList.jsx`, `Item.jsx` | 🔲 Not started |
-| _`<name>`_ | `ItemDetails.jsx`, `Favorites.jsx` | 🔲 Not started |
-| _`<name>`_ | `Nav.jsx`, `NotFound.jsx`, `api.js` | 🔲 Not started |
+| _`Brian`_ | `App.jsx`, `context.js`,`NotFound.jsx` | 🟡 In progress |
+| _`Kevin`_ | `Home.jsx`, `ItemDetails.jsx` | 🟡 In progress |
+| _`Marlon`_ | `ItemList.jsx`, `Item.jsx` | 🟡 In progress |
+| _`Cahlaija`_ | `Main.jsx`, `Favorites.jsx` | 🟡 In progress |
+| _`Henny`_ | `Nav.jsx`, `SearchBar.jsx`, `api.js` | 🟡 In progress |
 
 > **Status key:** 🔲 Not started · 🟡 In progress · ✅ Merged into `main`
 > The file groupings above are a suggestion — rearrange them to fit your team's size and strengths.
@@ -203,9 +200,9 @@ git push origin bob
 
 **2. Open a Pull Request** — on GitHub, go to **Pull requests → New pull request**. Set the **base** branch to `main` and the **compare** branch to `bob`.
 
-**3. Review & Merge** — the Driver reviews for breaking changes or syntax errors, then clicks **Merge pull request** if clean.
+**3. Review & Merge** the Driver reviews for breaking changes or syntax errors, then clicks **Merge pull request** if clean.
 
-**4. Sync the team** — after each merge into `main`, every member updates their local `main` and merges it into their branch:
+**4. Sync the team** after each merge into `main`, every member updates their local `main` and merges it into their branch:
 
 ```bash
 git checkout main
