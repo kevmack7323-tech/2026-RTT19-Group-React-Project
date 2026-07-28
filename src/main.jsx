@@ -1,6 +1,7 @@
 import SearchBar from "../components/SearchBar";
 import ItemList from "../components/ItemList";
 
+
 function Main({ items }) {
   return (
     <div>
