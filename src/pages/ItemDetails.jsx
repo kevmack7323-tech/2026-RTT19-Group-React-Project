@@ -1,6 +1,8 @@
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
 import { getItemDetails } from "../api";
+import { ItemList } from "../components/ItemList";
+import { Item } from "../components/Item"
 
 export default function ItemDetails(){
     
