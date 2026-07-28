@@ -1,6 +1,10 @@
 import Item from "./Item";
 
 function ItemList({ movies }) {
+  if (movies.length === 0) {
+    return <p>No movies found.</p>;
+  }
+
   return (
     <div>
       {movies.map((movie) => (
