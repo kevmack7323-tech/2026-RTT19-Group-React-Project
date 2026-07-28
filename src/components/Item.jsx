@@ -1,8 +1,9 @@
 function Item({ movie }) {
   return (
-    <div>
-      <img 
-        src={movie.Poster} 
+    <div className="movie-card">
+      <img
+        className="movie-poster"
+        src={movie.Poster}
         alt={movie.Title}
       />
 
