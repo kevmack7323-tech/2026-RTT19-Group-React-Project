@@ -42,6 +42,43 @@ export default function App() {
     });//If the item is already saved, return the favorites list unchanged 
   }
 
+  function removeFavorite(imdbID) {
+    setFavoriteItems((prevFavorites) =>
+      prevFavorites.filter((fav) => fav.imdbID !== imdbId)
+    );
+  }
 
-
+  return (
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      <div className={`app ${theme}`}>
+      <Nav />
+      <Routes>    
+        <Route
+        path="/"
+        element={
+          <Home
+          items={items}
+          setItems={setItems}
+          addFavorite={addFavorite}
+          />
+        }
+        />
+        <Route
+        path="/item/:id"
+        element={<ItemDetails addFavorite={addFavorite}/>}
+        />
+        <Route
+        path="/favorites"
+        element={
+          <Favorites
+          favoriteItems={favoriteItems}
+          removeFavorite={removeFavorite}
+          />
+        }
+        />
+        <Route path="*" element={<NotFound />} />
+        </Routes>       
+      </div>
+      </ThemeContext.Provider>
+  );
 }
