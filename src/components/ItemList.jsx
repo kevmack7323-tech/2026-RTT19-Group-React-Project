@@ -1,6 +1,7 @@
 import Item from "./Item";
 
 function ItemList({ movies = [] }) {
+  // Show a message if there are no movies
   if (movies.length === 0) {
     return <p>No movies found.</p>;
   }

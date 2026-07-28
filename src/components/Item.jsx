@@ -2,16 +2,21 @@ function Item({ movie }) {
   return (
     <div className="movie-card">
       <img
-        className="movie-poster"
-        src={movie.Poster}
+        src={
+          movie.Poster !== "N/A"
+            ? movie.Poster
+            : "https://via.placeholder.com/300x450?text=No+Image"
+        }
         alt={movie.Title}
       />
 
-      <h2>{movie.Title}</h2>
+      <h3>{movie.Title}</h3>
 
-      <p>Release Year: {movie.Year}</p>
+      <p>{movie.Year}</p>
 
-      <p>Type: {movie.Type}</p>
+      <Link to={`/item/${movie.imdbID}`}>
+        View Details
+      </Link>
     </div>
   );
 }
