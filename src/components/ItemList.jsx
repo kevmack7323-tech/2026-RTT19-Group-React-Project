@@ -1,20 +1,18 @@
-import Item from "./Item";
-
-function ItemList({ movies }) {
-  if (movies.length === 0) {
-    return <p>No movies found.</p>;
-  }
-
+function Item({ movie }) {
   return (
     <div>
-      {movies.map((movie) => (
-        <Item
-          key={movie.imdbID}
-          movie={movie}
-        />
-      ))}
+      <img 
+        src={movie.Poster} 
+        alt={movie.Title}
+      />
+
+      <h2>{movie.Title}</h2>
+
+      <p>Release Year: {movie.Year}</p>
+
+      <p>Type: {movie.Type}</p>
     </div>
   );
 }
 
-export default ItemList;
+export default Item;
