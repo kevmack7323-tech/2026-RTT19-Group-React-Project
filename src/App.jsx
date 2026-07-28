@@ -31,4 +31,17 @@ export default function App() {
     loadInitialItems();
   }, []);
 
+  //Favorites Fuction: should add items to the favorites list and avoid duplicates
+  function addFavorite(item) {//take item as parameter
+    setFavoriteItems((prevFavorites) => {
+      const alreadySaved = prevFavorites.find(
+        (fav) => fav.imdbID === item.imdbID//it uses the state setter function pattern with prevFavorites
+      );
+      if (alreadySaved) return prevFavorites;
+      return [...prevFavorites, item];//this checks if this item is already in favorites by comparing imdbID values .find()
+    });//If the item is already saved, return the favorites list unchanged 
+  }
+
+
+
 }
